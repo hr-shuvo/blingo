@@ -13,7 +13,7 @@ import "./globals.css";
 //   weight: "100 900",
 // });
 
-const font = Nunito({subsets: ['latin']})
+const font = Nunito({subsets: ['latin'], weight:'800'})
 
 export const metadata: Metadata = {
   title: "Create Next App",
