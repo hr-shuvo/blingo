@@ -7,7 +7,7 @@ import {ClerkLoaded, ClerkLoading, UserButton} from "@clerk/nextjs";
 import {Loader} from "lucide-react";
 
 type Props = {
-    children: React.ReactNode
+    className: React.ReactNode
 };
 
 export const Sidebar = ({className}: Props) => {
