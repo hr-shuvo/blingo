@@ -1,6 +1,6 @@
 'use client'
 
-import { courses } from "@/db/schema"
+import { courses, userProgress } from "@/db/schema"
 import type { InferSelectModel } from "drizzle-orm";
 import { Card } from "./card";
 
@@ -8,7 +8,7 @@ type Course = InferSelectModel<typeof courses>;
 
 type Props = {
     courses : Course[];
-    activeCourseId:number;
+    activeCourseId?:typeof userProgress.$inferSelect.activeCourseId;
 }
 
 export const List =({courses, activeCourseId}:Props) =>{
