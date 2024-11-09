@@ -3,8 +3,8 @@ import { List } from "./list";
 
 const CoursesPage = async () =>{
 
-    const coursesData = await getCourses();
-    const userProgressData = await getUserProgress();
+    const coursesData = getCourses();
+    const userProgressData = getUserProgress();
 
     const [
         courses,
