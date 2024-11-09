@@ -18,27 +18,17 @@ const LearnPage = async () => {
     return (
         <div className='flex flex-row-reverse gap-[48px] px-6'>
             <StickyWrapper>
-                <UserProgress activeCourse={{title:'Spanish', imageSrc: '/es.svg'}} hearts={5}
-                              points={100} hasActiveSubscription={false}>
+                <UserProgress 
+                    activeCourse={userProgress.activeCourse} 
+                    hearts={userProgress.hearts}
+                    points={userProgress.points} 
+                    hasActiveSubscription={false}
+                >
                 </UserProgress>
             </StickyWrapper>
             <FeedWrapper>
-                <Header title='Spanish'/>
-                <div className='space-y-4'>
-                    <div className='h-[700px] bg-blue-500 w-full'/>
-                    <div className='h-[700px] bg-blue-500 w-full'/>
-                    <div className='h-[700px] bg-blue-500 w-full'/>
-                    <div className='h-[700px] bg-blue-500 w-full'/>
-                    <div className='h-[700px] bg-blue-500 w-full'/>
-                    <div className='h-[700px] bg-blue-500 w-full'/>
-                    <div className='h-[700px] bg-blue-500 w-full'/>
-                    <div className='h-[700px] bg-blue-500 w-full'/>
-                    <div className='h-[700px] bg-blue-500 w-full'/>
-                    <div className='h-[700px] bg-blue-500 w-full'/>
-                    <div className='h-[700px] bg-blue-500 w-full'/>
-                    <div className='h-[700px] bg-blue-500 w-full'/>
-
-                </div>
+                <Header title={userProgress.activeCourse.title}/>
+                
             </FeedWrapper>
         </div>
     );
