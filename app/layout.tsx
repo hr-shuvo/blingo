@@ -3,6 +3,7 @@ import {Nunito} from "next/font/google";
 import "./globals.css";
 import {ClerkProvider} from "@clerk/nextjs";
 import { Toaster } from "sonner";
+import { ExitModal } from "@/components/modals/exit-modal";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -34,6 +35,7 @@ export default function RootLayout({
               className={font.className}
           >
             <Toaster/>
+            <ExitModal/>
           {children}
           </body>
           </html>
